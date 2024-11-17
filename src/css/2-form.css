@@ -11,6 +11,22 @@ body {
     color: #2a2a2a;
 }
 
+button:hover {
+    background-color: #6C8CFF;
+}
+
+button:focus {
+    background-color: #6C8CFF;
+}
+
+button {
+    background-color: #4E75FF;
+    color: #FFFFFF;
+    width: 63px;
+    height: 24px;
+
+}
+
 button,
 label {
     cursor: pointer;
