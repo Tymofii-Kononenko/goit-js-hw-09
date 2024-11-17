@@ -1,3 +1,6 @@
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 const images = [
     {
         preview:
@@ -83,21 +86,13 @@ function createMarkup(images) {
     `).join("")
 }
 
-gallery.addEventListener("click", handleClick);
+document.addEventListener('DOMContentLoaded', lightbox);
 
-function handleClick(event) {
-    event.preventDefault();
-    if (event.target === event.currentTarget) {
-        return;
-
-    }
-    // const originalUrl = event.target.dataset.source;
-    // console.log(originalUrl);
-    const previewLink = event.target.dataset.source;
-    const instance = basicLightbox.create(`
-    <img src="${previewLink}" width="1112" height="640">
-`)
-
-    instance.show()
+function lightbox() {
+    let gallery = new SimpleLightbox('.gallery a', {
+        captionDelay: 250,
+        captionsData: 'alt',
+        overlayOpacity: 0.7,
+    });
 
 }
