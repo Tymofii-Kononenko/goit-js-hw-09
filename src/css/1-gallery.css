@@ -1,0 +1,29 @@
+body {
+    max-width: 1440px;
+    max-height: 696px;
+    margin: 0;
+    background: #FFF;
+}
+
+ul {
+    padding: 24px 156px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+img {
+    width: 360px;
+    height: 200px;
+    flex-shrink: 0;
+    transition: transform 0.1s;
+}
+
+img:hover {
+    transform: scale(1.0444);
+    cursor: pointer;
+}
