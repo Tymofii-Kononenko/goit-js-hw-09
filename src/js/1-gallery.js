@@ -86,13 +86,8 @@ function createMarkup(images) {
     `).join("")
 }
 
-document.addEventListener('DOMContentLoaded', lightbox);
-
-function lightbox() {
-    let gallery = new SimpleLightbox('.gallery a', {
-        captionDelay: 250,
-        captionsData: 'alt',
-        overlayOpacity: 0.7,
-    });
-
-}
+const galleryShow = new SimpleLightbox('.gallery a', {
+    captionDelay: 250,
+    captionsData: 'alt',
+    overlayOpacity: 0.7,
+});
